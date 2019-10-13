@@ -8,8 +8,6 @@ body {
     line-height: 1.42;
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
-
-
 }
 ul {
     padding: 0;
@@ -22,20 +20,21 @@ h1, h2, h3, h4, h5, p {
     margin: 0;
 } 
 h1 {
-    font-size: 49px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 45px;
     text-transform: uppercase;
     line-height: 38px;
-    padding: 60px 0 0;
+    padding: 60px 0;
 }
 
 h2 {
     font-family: "Roboto";
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
 }
 h3 {
     font-family: "Roboto";
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     color: #221f1f;
 }
@@ -128,7 +127,6 @@ p {
   .nav__item--active .nav__link {
     color: #f89513;
   }
-  
   .nav__link--icon--main:before {
     background-image: url('./img/main_icon.png');
   }
@@ -136,7 +134,9 @@ p {
   .nav__link--icon--feed:before {
     background-image: url('./img/feed_icon.png');
   }
-  
+  .nav__item--active .nav__link--icon--feed:before {
+    background-image: url('./img/feed_icon_copy.png');
+  }  
   .nav__link--icon--service:before {
     background-image: url('./img/service_icon.png');
   }
@@ -229,7 +229,19 @@ h1.features, h5.features__name, p.features__desc, li.features__item {
 .news__list {
     width: 900px;
 }
-
+.news__item {
+    display: inline-flex;
+    border-bottom: solid 2px #f5f5f5;
+    width: 830px;
+    margin: 0 20px;
+    padding: 30px 0px;
+}
+.news__item img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 160px;
+    height: 160px;
+}
 .sidebar {
     width: 180px;
 }
@@ -237,22 +249,44 @@ h1.features, h5.features__name, p.features__desc, li.features__item {
     list-style-type: none;
 }
 .pagination {
-    margin: 0 auto;
+    margin: 0 auto 65px auto;
     width: 340px;
     height: 30px;
 }
 .pagination__display span {
-    color: color: #656464;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #656464;
 }
 .pagination__display, .pagination__list {
     display: inline-block;
+    height: 100%;
 }
 .pagination__pager, .pagination__item {
     display: inline;
 }
 .pagination__button-prev, .pagination__button-next, .pagination__link {
+    font-family: "Roboto";
+    font-weight: 700;
     text-decoration: none;
     color: #221f1f;
+    font-size: 14px;
+}
+.pagination__link {
+    margin: 0px 8px; 
+}
+.pagination__link:hover {
+    color: #f89513;
+}
+.pagination__item--active {
+    display: inline-block;
+    list-style-type: none;
+    width: 25px;
+    height: 25px;
+    background: url(./img/Paginator_hover.png);
+}
+.pagination__item--active .pagination__link {
+    color: #f89513;
 }
 .footer {
     background: #131415;
