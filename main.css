@@ -485,6 +485,7 @@ address {
     margin-right: 0;
 }
 .service__type {
+    margin-bottom: 30px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,7 +496,7 @@ address {
 }
 .service__type h2 {
     margin: auto;    
-    color: #fff;
+    color: green;
     font-family: "Open Sans";
     font-size: 24px;
     font-weight: 700;
