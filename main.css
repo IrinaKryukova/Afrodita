@@ -195,6 +195,7 @@ address {
 }
 
 .breadcrumbs__link {
+    font-family: 'Open Sans', sans-serif;
     color: #f89513;
     font-size: 14px;
     font-style: italic;
