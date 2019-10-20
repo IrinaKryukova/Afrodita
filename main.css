@@ -423,6 +423,7 @@ address {
     margin-right: 20px;
 }
 .avatar {
+    cursor: pointer;
     width: 160px;
     height: 160px;
     border-radius: 50%;
@@ -439,7 +440,11 @@ address {
     bottom: 0;
     background: rgba(255, 255, 255, .5);
 }
-  
+.avatar__pic:hover .avatar:after {
+    content: "";
+    background:none;
+} 
+
 .avatar__pic {
     display: block;  
     width: 100%;
