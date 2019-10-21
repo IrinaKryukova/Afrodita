@@ -1,0 +1,22 @@
+.contacts {
+    font-style: normal;    
+}
+.contacts__phone {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;    
+}
+.contacts__schedule {
+    text-align: end;
+    display: block;
+    opacity: .7;
+    color: #f89513;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}

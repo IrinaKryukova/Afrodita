@@ -1,0 +1,12 @@
+.header {
+    background: #131415;
+    height: 72px;
+    margin-bottom: 35px;       
+}
+
+.header__container {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+  }  

@@ -1,0 +1,19 @@
+@font-face { 
+    font-family: 'GoraFree-Regular';  
+    src: local('GoraFree-Regular'), url('https://nomail.com.ua/files/woff/af6eee1b3c701a7590c05964d553ee66.woff') format('woff'); 
+}
+.header__logo, .footer__logo {
+    font-family: 'GoraFree-Regular'; 
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+    color: #f89513;  
+}
+.header__logo {
+    margin-left: 20px;
+    display: block;
+} 
+.footer__logo {
+    margin-right: 56px;
+} 

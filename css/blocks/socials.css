@@ -1,0 +1,32 @@
+.footer__socials { 
+    margin-right: 17px;       
+    color: #fff;
+}
+.footer__socials h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: #fff;
+}
+.socials__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.socials__item {
+    display: inline-flex;
+    margin-right: 10px;
+}
+.socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.socials__link:hover {
+    background-color: #f89513;
+}    
