@@ -1,6 +1,5 @@
 .block__services {
-    margin-bottom: 20px;
-    padding: 0 90px;
+    margin-bottom: 11px;
 }
 .block__services h1 {
     padding: 17px 0 47px;
@@ -10,14 +9,11 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }    
 .services__item {
-    width: 250px; 
-    margin-right: 60px; 
+    width: 287px;    
     margin-bottom: 46px;  
-}
-.services__item:nth-child(3n) {
-    margin-right: 0;
 }
 .service__type {    
     margin-bottom: 22px; 
@@ -31,8 +27,13 @@
 }
 .service__title {
     position: absolute;
-    width: 250px;
+    width: 100%;
     text-align: center;
+    z-index: 5;
+}
+.service__type {
+    position: relative;
+    cursor: pointer;
 }
 .service__type h2 {
     margin: auto;    
@@ -44,19 +45,25 @@
     text-transform: uppercase;
 }
 .service__pic {
-    display: block;
-    /* object-fit: cover; */
+    display: block;    
     width: 100%;
     height: 100%;
+    z-index: 1;  
+    opacity: 0.4;  
 }
-.service__pic:after {
-    content: "";
+.service__type:hover div.service__cover {
+    background-image: none;
+}
+.service__cover {
+    background-image: url(../../img/cover.png);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, .5);
 }
 .service__desc h3 {
     font-family: 'Open Sans', sans-serif;

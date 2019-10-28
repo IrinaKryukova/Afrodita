@@ -1,13 +1,11 @@
 .nav__list {
     display: flex;
-    list-style-type: none;
-    align-items: center;
-    height: 74px;    
+    flex-direction: column; 
+    list-style-type: none;    
+    padding-left: 78px;    
   }
-.nav__item {
-    
-    padding: 0 13px;
-    margin: 0;
+.nav__item {    
+    margin-bottom: 16px;
 }
 .nav__link:before {
     content: "";
@@ -17,6 +15,7 @@
     height: 18px;
     margin-right: 14px;
     background: center center / contain no-repeat;
+    transition: .3s;
 }
   
 .nav__link {
@@ -24,20 +23,21 @@
     font-size: 13px;
     font-weight: 700;
     display: inline;
-    color: #ffffff;
+    color: #221f1f;    
     text-decoration: none;
     text-transform: uppercase;
 }
   
 .nav__link:hover {
     color: #f89513;
+    transition: .3s;
 }
   
 .nav__item--active .nav__link {
-    color: #f89513;
+    color: #f89513; 
 }
 .nav__link--icon--main:before {
-    background-image: url('../../img/main_icon.png');
+    background-image: url('../../img/main_icon\ .png');
 }
 .nav__item--active .nav__link--icon--main:before,
 .nav__item:hover .nav__link--icon--main:before {
@@ -45,12 +45,16 @@
 }  
   
 .nav__link--icon--feed:before {
-    background-image: url('../../img/feed_icon.png');
+    background-image: url('../../img/feed_icon\ .png');
 }
 .nav__item--active .nav__link--icon--feed:before,
 .nav__item:hover .nav__link--icon--feed:before {
     background-image: url('../../img/feed_icon_copy.png');
-}  
+} 
+.nav__item--active .nav__link--icon--service:before,
+.nav__item:hover .nav__link--icon--service:before {
+    background-image: url('../../img/service_icon_copy.png')
+}
 .nav__link--icon--service:before {
-    background-image: url('../../img/service_icon.png');
+    background-image: url('../../img/service_icon\ .png');
 }

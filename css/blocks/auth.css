@@ -1,0 +1,36 @@
+.wrapper.wrapper_auth {
+    position: relative;
+    min-width: 100%;    
+    background-image: url("../../img/auth_img.png");
+    background-size: cover;
+}
+.welcome__page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: block;    
+}
+.welcome__button {
+    margin-top: 33px;
+    width: 172px;
+    height: 45px;
+    text-align: center;
+    background-color: #f89513;
+    border-radius: 3px;
+}
+.welcome__button a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-decoration: none;    
+    display: inline-flex;
+    padding: 15px 0;    
+    text-transform: uppercase;   
+    color: #fff;    
+}
+.welcome__button:hover {
+    background-color: #131415;
+}

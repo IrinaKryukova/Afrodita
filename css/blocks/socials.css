@@ -1,17 +1,16 @@
-.footer__socials { 
-    margin-right: 17px;       
-    color: #fff;
+.block__socials { 
+    margin-right: 17px;    
 }
-.footer__socials h3 {
+.block-socials h3 {
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin-bottom: 7px;
-    color: #fff;
+    color: #221f1f;
 }
 .socials__list {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: center;
 }
 
 .socials__item {
@@ -21,12 +20,13 @@
 .socials__link {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #fff;
+    align-items: center;    
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    opacity: 0.3;
+    transition: .3s;
 }
 .socials__link:hover {
-    background-color: #f89513;
+    opacity: 1;
 }    

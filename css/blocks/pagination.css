@@ -1,11 +1,9 @@
 .pagination {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 63px;
-    height: 30px;
+    justify-content: start;    
+    margin-bottom: 52px; 
+    margin-left: 116px;   
 }
 .pagination__display span {
     font-family: "Roboto";
@@ -21,7 +19,7 @@
     align-items: center;
 }
 .pagination__button-prev, .pagination__button-next, .pagination__link {
-    margin: 0 9px;
+    margin: 0 8px 0 9px;
     font-family: "Roboto";
     font-weight: 700;
     text-decoration: none;
@@ -37,6 +35,7 @@
 .pagination__link:hover,
 .pagination__item--active .pagination__link  {
     color: #f89513;
+    transition: .3s;
 }
 .pagination__item--active { 
     line-height: 25px;
