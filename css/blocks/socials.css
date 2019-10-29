@@ -1,11 +1,11 @@
-.block__socials { 
-    margin-right: 17px;    
+.block-socials { 
+    margin-left: 17px;
 }
 .block-socials h3 {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    margin-bottom: 7px;
+    margin-bottom: 11px;
     color: #221f1f;
 }
 .socials__list {
@@ -15,18 +15,43 @@
 
 .socials__item {
     display: inline-flex;
-    margin-right: 10px;
+    margin: 0 11px 0 8px;
 }
-.socials__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+.socials__link { 
+    background-image: url('../../img/sprite_socials.png');
+    background-repeat: no-repeat;       
     opacity: 0.3;
     transition: .3s;
-}
+    }
 .socials__link:hover {
     opacity: 1;
-}    
+} 
+.socials__link-fb {
+    width: 6px;
+    height: 13px;
+    background-position: -5px -5px;
+}
+
+.socials__link-google {
+    width: 15px;
+    height: 10px;
+    background-position: -21px -4px;
+}
+
+.socials__link-mail {
+    width: 12px;
+    height: 10px;
+    background-position: -21px -23px;
+}
+
+.socials__link-twitter {
+    width: 11px;
+    height: 10px;
+    background-position: -46px -4px;
+}
+
+.socials__link-vk {
+    width: 12px;
+    height: 15px;
+    background-position: -43px -22px;
+}

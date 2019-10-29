@@ -1,18 +1,31 @@
 .service-promotion {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 61px;
     margin-bottom: 24px;
-    padding: 20px 26px 25px 28px;
-    width: 220px;
+    padding: 22px 21px 25px 21px;
     text-align: center;
     background-color: #131415;
 }
-.service-promotion p {
-    width: 638px;
+.service-promotion::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../img/pattern.png');
+}
+.service-promotion p { 
+    font-family: 'Open Sans', sans-serif;   
     color: #fff;
 }
 .request {
     color: #f89513;
     font-weight: 700;
+    text-decoration: none;
+}
+.request:hover {
+    text-decoration: underline;
 }

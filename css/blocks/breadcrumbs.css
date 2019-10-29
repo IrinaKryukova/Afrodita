@@ -1,5 +1,5 @@
 .breadcrumbs {
-    padding-top: 3px;
+    padding-top: 35px;
 }
 .breadcrumbs__list {
     display: flex;
@@ -12,9 +12,14 @@
 
 .breadcrumbs__link {
     font-family: 'Open Sans', sans-serif;
-    color: #f89513;
+    font-weight: 300;    
     font-size: 14px;
     font-style: italic;
+    color: #f89513;
+}
+.breadcrumbs__link:hover {
+    text-decoration: none;
+    transition: .3s;
 }
 
 .breadcrumbs__item--active:after {
@@ -23,5 +28,9 @@
 
 .breadcrumbs__item--active .breadcrumbs__link {
     color: #221f1f;    
-    text-decoration: none;
+    text-decoration: none;    
+}
+.breadcrumbs__item--active:hover {
+    text-decoration: underline;
+    transition: .3s;
 }

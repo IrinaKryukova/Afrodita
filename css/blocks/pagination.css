@@ -1,9 +1,7 @@
 .pagination {
     display: flex;
-    flex-direction: row;
-    justify-content: start;    
-    margin-bottom: 52px; 
-    margin-left: 116px;   
+    margin-bottom: 48px;
+    margin-left: 197px; 
 }
 .pagination__display span {
     font-family: "Roboto";
@@ -30,7 +28,7 @@
     margin-right: 16px;
 }
 .pagination__button-prev {
-    margin: 0 14px 0 2px;
+    margin: 0 16px 0 2px;
 }
 .pagination__link:hover,
 .pagination__item--active .pagination__link  {

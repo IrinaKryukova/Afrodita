@@ -32,8 +32,8 @@ body {
 .wrapper__sidebar {
     display: flex;
     flex-direction: column;
-    width: 290px;
-    margin: 0 18px;
+    max-width: 275px;
+    margin: 0 21px 0 18px;
 }
 .page-content__container {
     display: flex;
