@@ -34,3 +34,29 @@
 .welcome__button:hover {
     background-color: #131415;
 }
+.welcome__animation {
+    display: flex;
+    flex-direction: column;
+    animation: scale 1s;
+}
+
+@keyframes scale {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        transform: scale(1.2)
+    }
+    40% {
+        transform: scale(.9)
+    }
+    60% {
+        transform: scale(1.1)
+    }
+    80% {
+        transform: scale(0.95)
+    }
+    100% {
+        opacity: 1;
+    }
+}
