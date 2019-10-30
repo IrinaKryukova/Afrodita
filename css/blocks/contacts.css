@@ -26,9 +26,9 @@
     position: relative;  
     margin-right: 3px;      
 }
-.contacts__dropdown:hover .dropdown__menu {    
-    right: 0;
-    opacity: 1;
+.dropdown__list {
+    list-style-type: none;
+    margin: 13px 15px 15px 20px;
 }
 .contacts__dropdown:hover .contacts__schedule {    
     color: #fff;
@@ -36,7 +36,7 @@
 .dropdown__menu {
     position: absolute;
     top: 100%;
-    margin-top: 19px;
+    margin-top: 14px;
     right: 9999px;
     opacity: 0;
     transition: opacity .3s;   
@@ -46,7 +46,6 @@
     background-image: linear-gradient(to top, #fff 0%, #fff 100%);
     border-radius: 3px;
 }
-
 .dropdown__menu:before {
     position: absolute;
     content: "";
@@ -58,7 +57,11 @@
     border-right: 15px solid transparent;
     border-bottom: 15px solid white;    
 }
-
+.contacts__dropdown:hover .dropdown__menu,
+.dropdown__menu:hover {    
+    right: 0;
+    opacity: 1;
+} 
 .orange {
     font-family: "Open Sans";
     font-size: 14px;
@@ -71,8 +74,5 @@
     font-weight: 400;
     margin-bottom: 3px;
 }
-.droppdown__list {
-    list-style-type: none;
-    margin: 13px 15px 15px 20px;
-}
+
 
